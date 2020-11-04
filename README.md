@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-<!--
+<!-- Some interesting things. Dont delete!
 **WebSDEZ/WebSDEZ** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
@@ -14,3 +14,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+Simple messenger created by our little command. 
+This project based on Node.js platform. Messages are sent using Socket.io module. 
