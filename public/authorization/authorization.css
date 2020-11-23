@@ -17,14 +17,14 @@ body{
 
 .form button{
     text-transform:uppercase;
-    background-color:#955895;
+    background:#955895;
     width:100%;
     border:0;
     color:#FFFFFF;
     font-size:15px;
     padding:15px;
     cursor:pointer;
-    transition:all 1s ease;
+    transition:background 1s ease;
         
 }
 
