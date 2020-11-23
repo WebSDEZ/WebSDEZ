@@ -41,13 +41,13 @@ body{
     border:0;
 }
 
-.form .message {
+.form .text {
     margin:15px 0 0;
     color:#b3b3b3;
-    font-size:12px;
+    font-size:15px;
 }
 
-.form .message a {
+.form .text a {
     color:#FFA07A;
     text-decoration:none;
 }
