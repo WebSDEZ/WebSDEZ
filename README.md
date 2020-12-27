@@ -18,3 +18,12 @@ Here are some ideas to get you started:
 Simple messenger created by our little command. 
 
 This project based on Node.js platform. Messages are sent using Socket.io module. 
+
+How to install:
+1. Clone the project
+2. Set you database using script or model from folder 'database'. Default name of the database is 'SuperDB'
+3. In the root directory write 'npm install'. All dependencies will be downloaded
+
+How to launch:
+1. Launch your sql server
+2. Write 'npm start' to start the node.js server
