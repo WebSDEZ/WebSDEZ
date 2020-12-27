@@ -1,0 +1,97 @@
+#popup-fade:before {
+    content: '';
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: 10;
+}
+
+#popup-fade {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 10;
+}
+
+.popup {
+    position: absolute;
+    background-color: gray;
+    margin: auto;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid orange;
+    width: 40%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    opacity: 1;
+    z-index: 111;
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes animatetop {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.popup button {
+    text-transform: uppercase;
+    background: #955895;
+    width: 100%;
+    border: 0;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background 1s ease;
+}
+
+.popup input {
+    width: 100%;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #f2f2f2;
+    border: 0;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+#popup-close {
+    position: absolute;
+    color: white;
+    float: right;
+    font-size: 1em;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+}

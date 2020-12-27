@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSDEZ - chat</title>
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/chat.css">
+    <link rel="stylesheet" href="/styles/profile.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+		<div class="name">
+			<p id="name_username" class="name_username"></p>
+			<p class="online">Online</p>
+		</div>
+		 
+		 <div class="exit_icon">
+			<a href="/logout">   
+				<i class="fa fa-sign-ou fa-5x"></i>
+			</a>
+		 </div>
+	 </header>
+    
+    <main>
+        <div class="members">
+            <ul id="members">
+                <!-- <li class="member">
+                    <p>Username</p>
+                    <p>login</p>
+                </li>
+                <li class="member">
+                    <p>Username</p>
+                    <p>login</p>
+                </li>
+                <li class="member">
+                    <p>Username</p>
+                    <p>login</p>
+                </li> -->
+                <li>
+                    <form id="member-form">
+                        <input type="text" name="newUser" id="newUser" minlength="1" required autocomplete="off">
+                    </form>
+                </li>
+            </ul>
+        </div>
+
+        <div class="chat">
+            <div class="chat-header">
+                <a href="/after_auth">Back</a>
+                <p id="chat-topic">Topic</p>
+            </div>
+
+            <div id="msg-list">
+                <ul id="messages">
+                    <!-- <li>
+                        <div class="satellite-msg">
+                            <p>Username</p>
+                            <time datetime="2020-12-12">12.12.2020</time>
+                        </div>
+                        <p>some text message</p>
+                    </li>
+                    
+                    <li class="client-msg">
+                        <div class="satellite-msg">
+                            <p>Username</p>
+                            <time datetime="2020-12-12">12.12.2020</time>
+                        </div>
+                        <p>some text message</p>
+                    </li> -->
+                </ul>
+            </div>
+
+            <div id="send-panel">
+                <form id="form">
+                    <input type="text" id="inputMsg" minlength="1" required autofocus placeholder="Write your message..." autocomplete="off">
+                    <input type="button" id="btnSendMsg" value="Send">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- user profile popup-window. Hidden on default -->
+    <div id="popup-fade">
+        <div class="popup">
+            <a id="popup-close" href="#">Закрыть</a>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Username">
+
+                <label for="age">AGE</label>
+                <input id="age" type="number" placeholder="age">
+
+                <label for="sex_input">SEX</label>
+                <input list="sex" placeholder="sex" id="sex_input">
+                <datalist id="sex">
+                    <option value="male">
+                    <option value="female">
+                </datalist>
+
+                <label for="birth">DATE of BIRTH</label>
+                <input id="birth" type="date"></input>
+
+                <p><b>Hobbies:</b></p>
+                <p><textarea maxlength="2000" id="hobbies"></textarea></p>
+
+                <input type="button" value="Save changes" id="saveProfile">
+            </form>
+        </div>
+    </div>
+
+    <!-- Don't change the order!!! -->
+    <script src="/scripts/profile.js"></script>
+    <script src="/scripts/chat.js"></script>
+</body>
+</html>

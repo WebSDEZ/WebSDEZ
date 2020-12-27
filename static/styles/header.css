@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+header {
+	background-color: #955895;
+	height: 100px;
+    width:100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	margin-bottom: 15px;
+	position: absolute;
+}
+
+header a {
+	padding: 15px;
+	height: 30px;
+}
+
+.short-usr {
+	padding: 15px;
+}
+
+.name_username {
+	margin: 0px;
+	font-size: 3em;
+	font-weight: bolder;
+}
+
+.online {
+    color:#FFA07A;;
+	font-size: 1em;
+	margin-top: 0px;
+}
+.name {
+	padding: 15px 15px 15px 40px;
+}
+.exit_icon{
+    margin-right: 40px;
+}
+i:before {
+	content: "\f08b"; /* добавляем иконку выхода */
+	font-family: FontAwesome;
+	color: #ffffff;
+}
+
+a:hover{
+    color:mediumpurple;
+}

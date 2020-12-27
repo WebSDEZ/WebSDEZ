@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WebSDEZ - chatlist</title>
+	<link rel="stylesheet" href="/styles/header.css">
+	<link rel="stylesheet" href="/styles/chatlist.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="name">
+			<p id="name_username" class="name_username"></p>
+			<p class="online">Online</p>
+		</div>
+		 
+		 <div class="exit_icon">
+			<a href="/logout">   
+				<i class="fa fa-sign-ou fa-5x"></i>
+			</a>
+		 </div>
+	 </header>
+
+	<main>
+		<div id="chats">
+			<form class="chat" id="form">
+				<input type="text" name="newChat" id="newChat" minlength="1" required autocomplete="off">
+			</form>
+		</div>
+	</main>
+
+	<script src="/scripts/chatlist.js"></script>
+</body>
+</html>

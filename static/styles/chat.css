@@ -1,0 +1,206 @@
+html {
+    height: 100vh;
+}
+
+body { 
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    width: 100vw;
+}
+
+.chat {
+    background: #FFA07A;
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.chat-header {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 0 0 30px 30px;
+    background: #ddd8d8;
+    font-size: 1.4em;
+    color: black;
+}
+
+.chat-header > *:first-child {
+    margin: 5px;
+    margin-left: 30px;
+}
+
+.chat-header > *:last-child {
+    margin: 5px auto;
+    padding: 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#msg-list {
+    overflow-y: auto;
+}
+
+#messages {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#messages > li {
+    min-height: 2em;
+    list-style: none;
+    text-indent: 0;
+    margin: 0px 10px 10px 10px;
+    max-width: 70%;
+    font-family: Font Awesome;
+}
+
+#messages > li > p {
+    border-radius: 10px;
+    box-shadow:0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding: 10px;
+    word-break: break-all;
+
+    align-self: flex-start;
+    background-color: white;
+    color:black;
+}
+
+#messages > .client-msg {
+    align-self: flex-end;
+}
+
+#messages > .client-msg > p {
+    background-color: #955895;
+    color:white;
+}
+
+.satellite-msg {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.8em;
+}
+
+.satellite-msg > p:first-child {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#send-panel {
+    background: #cb95cb;
+    height: auto;
+    padding: 10px;
+}
+
+.client-msg .satellite-msg {
+    /* flex-direction: row-reverse; */
+    justify-content: flex-end;
+}
+
+#form {
+    display: flex;
+    justify-content: space-around;
+}
+
+#inputMsg {
+    width: 100%;
+    margin-right: 10px;
+    height: 2em;
+    border-radius:5px;
+    font-size: 1em;
+}
+
+#btnSendMsg {
+    width: 100px;
+    height: 2em;
+    font-size: 1em;
+}
+
+.members {
+    position:relative;
+    background: #ddd8d8;
+    width: 20%;
+    min-width: 10%;
+    max-width: 50%;
+}
+
+#members {
+    padding: 0;
+}
+
+.members {
+    overflow-y: auto;
+}
+
+#members > li {
+    background: white;
+    min-height: 20px;
+    border-radius: 10px;
+    list-style: none;
+    text-indent: 0;
+    padding: 10px;
+    margin: 10px 10px 0px 10px;
+}
+
+#members > li:last-child {
+    position: absolute;
+    left: 0;
+    right:0;    
+    border-radius: 10px;
+    border: 3px dashed #555555;
+    padding: 10px;
+    font-weight: bolder;
+    background-color:#FFA07A;
+    color:white;
+    text-align:center;
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.members li:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.members li:last-child:hover {
+    cursor: default;
+}
+
+#member-form > input {
+	color: white;
+	font-size: 1em;
+	width: 90%;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid white;
+}
+
+.member {
+    font-size: 1.01em;
+}
+
+.member > p:first-child {
+    font-size: 1.3em;
+}
+
+.member > p:last-child {
+    color: gray;
+}
